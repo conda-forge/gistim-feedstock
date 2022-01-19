@@ -1,5 +1,5 @@
 {% set name = "gistim" %}
-{% set version = "0.2" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/gistim-{{ version }}.tar.gz
-  sha256: b622d1d69c8fe1f5e2305c9657d7dc659e6d185add8997330f5afe5124db62e0
+  sha256: 8c7253be9b98ca7f28fc7eeb47b6c2d9c66d562c6a1e2e69dc0c52ad54cf483f
 
 build:
   number: 0
@@ -17,20 +17,19 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
     - setuptools_scm
   run:
-    - affine
+    - black
     - geopandas
     - matplotlib-base
+    - lmfit >=1.0
     - netCDF4
     - numba >=0.50
     - numpy
-    - pandas
-    - python >=3.6
+    - python >=3.7
     - rasterio >=1.0
-    - rioxarray
-    - scipy
+    - scipy >=1.5
     - timml
     - xarray >=0.15
 
