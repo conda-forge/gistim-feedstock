@@ -35,6 +35,7 @@ requirements:
     - shapely
     - tqdm
     - timml
+    - ttim
     - xarray >=0.15
 
 test:
