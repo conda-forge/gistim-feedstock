@@ -1,11 +1,11 @@
-About gistim
-============
+About gistim-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gistim-feedstock/blob/main/LICENSE.txt)
 
 Home: https://gitlab.com/deltares/imod/qgis-tim
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gistim-feedstock/blob/main/LICENSE.txt)
 
 Summary: GIS utilities for Tim(ML) Analytic Element modeling
 
@@ -148,5 +148,6 @@ Feedstock Maintainers
 =====================
 
 * [@Huite](https://github.com/Huite/)
+* [@JoerivanEngelen](https://github.com/JoerivanEngelen/)
 * [@visr](https://github.com/visr/)
 
