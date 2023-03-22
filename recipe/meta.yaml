@@ -1,5 +1,5 @@
 {% set name = "gistim" %}
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/gistim-{{ version }}.tar.gz
-  sha256: 35eaa9cd591837d4882c2cf28965615366219b15329e92fec3c712136f3efbc0
+  sha256: 659a7f83636124e18cf8ec78ea319e2d91d4ebf602d79fb6d63bac62148805f5
 
 build:
   number: 1
