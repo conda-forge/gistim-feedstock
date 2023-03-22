@@ -7,7 +7,7 @@ Home: https://gitlab.com/deltares/imod/qgis-tim
 
 Package license: GPL-2.0-or-later
 
-Summary: GIS utilities for Tim(ML) Analytic Element modeling
+Summary: GIS utilities for TimML and TTim Analytic Element modeling
 
 Development: https://gitlab.com/deltares/imod/qgis-tim
 
