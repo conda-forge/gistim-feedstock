@@ -20,20 +20,8 @@ requirements:
     - python >=3.8
     - setuptools_scm
   run:
-    - black
-    - fiona
-    - geopandas
-    - matplotlib-base
-    - lmfit >=1.0
-    - netcdf4
-    - numba >=0.50
-    - numpy
+    - pandas
     - python >=3.8
-    - rasterio
-    - rioxarray
-    - scipy >=1.5
-    - shapely >=2.0
-    - tqdm
     - timml
     - ttim
     - xarray >=0.15
