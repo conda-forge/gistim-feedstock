@@ -1,5 +1,5 @@
 {% set name = "gistim" %}
-{% set version = "0.5.0" %}
+{% set version = "0.5.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/gistim-{{ version }}.tar.gz
-  sha256: 9d704ebc2d80b2332b5e6a5d1814c6d8a01effe7afd6bacacd8137de547f737f
+  sha256: 45fd248b34db9edd76d25378d5c1a234737176dc1ffb20ff23a4a1fac78f812c
 
 build:
   number: 0
@@ -17,13 +17,13 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python >=3.9
     - setuptools_scm
   run:
     - pandas
-    - python >=3.8
-    - timml
-    - ttim
+    - python >=3.9
+    - timml ==6.3.0
+    - ttim ==0.6.5
     - xarray >=0.15
 
 test:
