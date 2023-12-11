@@ -17,13 +17,13 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python >=3.9
     - setuptools_scm
   run:
     - pandas
-    - python >=3.8
-    - timml
-    - ttim
+    - python >=3.9
+    - timml ==6.3.0
+    - ttim ==0.6.5
     - xarray >=0.15
 
 test:
