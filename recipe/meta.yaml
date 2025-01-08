@@ -6,22 +6,22 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/gistim-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/gistim-{{ version }}.tar.gz
   sha256: 45fd248b34db9edd76d25378d5c1a234737176dc1ffb20ff23a4a1fac78f812c
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.9
+    - python {{ python_min }}
     - setuptools_scm
   run:
     - pandas
-    - python >=3.9
+    - python >={{ python_min }}
     - timml ==6.3.0
     - ttim ==0.6.5
     - xarray >=0.15
@@ -33,6 +33,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://gitlab.com/deltares/imod/qgis-tim
